@@ -4,7 +4,7 @@
       width: 100%;
       height: 700px;
       background: linear-gradient(135deg, #ffffff 60%, #51b4bd63 50%, #007bff5e 90%),
-        /* Degradado */ url(assets/images/pexels-markusspiske-2004161.jpg); /* Imagen de fondo */
+        /* Degradado */ url(/assets/images/pexels-markusspiske-2004161.jpg); /* Imagen de fondo */
       background-size: cover;
       background-position: center left;
       background-repeat: no-repeat;
@@ -172,7 +172,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      background-image: url(assets/images/Innovation-amico.png);
+      background-image: url(/assets/images/Innovation-amico.png);
       background-size: 400px;
       background-position: center right;
       background-repeat: no-repeat;
@@ -247,7 +247,7 @@
     .square1 {
       grid-area: square1;
       background: linear-gradient(160deg, #00111d9d 40%, #3c3c3b8e 90%),
-        url(assets/images/pexels-asphotograpy-518244.jpg);
+        url(/assets/images/pexels-asphotograpy-518244.jpg);
       background-position: center;
       background-size: cover;
     }
@@ -293,7 +293,7 @@
       padding: 20px;
       border-radius: 20px 20px 20px 100px;
       background: linear-gradient(160deg, #00111db0 40%, #3c3c3b70 90%),
-        url(assets/images/pexels-olly-3760089.jpg);
+        url(/assets/images/pexels-olly-3760089.jpg);
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -430,7 +430,7 @@
     }
     .card1 {
       background: linear-gradient(90deg, #00111d 40%, #51b4bd86 90%),
-        url(assets/images/pexels-darshan394-1044329.jpg);
+        url(/assets/images/pexels-darshan394-1044329.jpg);
       background-position: center;
       background-size: cover;
     }
@@ -438,13 +438,13 @@
       margin-left: 40px;
       margin-right: 40px;
       background: linear-gradient(0deg, #00111d 40%, #51b4bdd0 90%),
-        url(assets/images/pexels-googledeepmind-18069696.jpg);
+        url(/assets/images/pexels-googledeepmind-18069696.jpg);
       background-position: center;
       background-size: cover;
     }
     .card3 {
       background: linear-gradient(-90deg, #00111d 40%, #51b4bda2 90%),
-        url(assets/images/pexels-thisisengineering-3861976.jpg);
+        url(/assets/images/pexels-thisisengineering-3861976.jpg);
       background-position: center bottom;
       background-size: fill;
     }

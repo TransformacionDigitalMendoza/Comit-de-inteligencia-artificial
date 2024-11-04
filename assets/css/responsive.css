@@ -361,8 +361,8 @@
       right: 200px;
       z-index: 1;
       transform: rotate(70deg);
-      border-radius: 50px;
-      background: linear-gradient(-90deg, #299bec 40%, #52ceff62 90%);
+      border-radius: 80px;
+      background: linear-gradient(165deg, #00111d 10%, #37cedb 90%);
     }
     .areas-content{
       width: 100%;
@@ -554,8 +554,8 @@
       justify-content: space-between;
     }
     .noticias-img {
-      width: 300px;
-      height: 300px;
+      width: 500px;
+      height: 500px;
       overflow: hidden;
     }
     .noticias-img img {
@@ -586,8 +586,8 @@
       background-color: #00111d00;
     }
     .news-square {
-      width: 250px;
-      height: 250px;
+      width: 350px;
+      height: 350px;
       border-radius: 50px;
       background: linear-gradient(165deg, #00111d 10%, #37cedb 90%);
       transform: rotate(45deg);
@@ -596,7 +596,7 @@
     }
     .noticias-slider {
       width: 100%;
-      height: 700px;
+      height: 900px;
       padding-left: 10%;
       padding-right: 10%;
       background-color: white;
@@ -744,12 +744,11 @@
     .header {
       display: none;
     }
-  
     .principal {
       width: 100%;
       height: 800px;
       background: linear-gradient(0deg, #c8eff8 20%, #ffffff 20%, #ffffff 80%),
-        url(assets/images/pexels-googledeepmind-18069696.jpg); /* Imagen de fondo */
+        url(/assets/images/pexels-googledeepmind-18069696.jpg); /* Imagen de fondo */
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -780,7 +779,7 @@
       justify-content: start;
       flex-direction: column;
       text-align: start;
-      background-image: url(assets/images/Code\ typing-bro.png);
+      background-image: url(/assets/images/Code\ typing-bro.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center left;
@@ -791,7 +790,7 @@
       background-color: #00111d;
       padding-left: 10%;
       padding-right: 10%;
-      background: linear-gradient(0deg, #ffffff 10%, #c8eff8 10%);
+      background: linear-gradient(-10deg, #ffffff 20%, #c8eff8 10%);
       /* Degradado */
       background-size: fill;
       background-position: center bottom;
@@ -826,19 +825,22 @@
       width: 100%;
       overflow: hidden;
       z-index: 2;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: start;
     }
     .objetivos-img img {
-      width: 400px;
+      width: 350px;
       height: auto;
       z-index: 2;
     }
     .objt-square {
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
       background: linear-gradient(165deg, #00111d 10%, #c8eff8 90%);
       position: absolute;
       z-index: 1;
-      margin-top: 5%;
       right: 50px;
       transform: rotate(95deg);
       border-radius: 50px;
@@ -920,7 +922,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      background-image: url(assets/images/Innovation-amico.png);
+      background-image: url(/assets/images/Innovation-amico.png);
       background-size: contain;
       background-position: center right;
       background-repeat: no-repeat;
@@ -1018,7 +1020,7 @@
       grid-area: square8;
       padding: 20px;
       background: linear-gradient(185deg, #00111dbb 40%, #3c3c3b62 90%),
-        url(assets/images/pexels-asphotograpy-518244.jpg);
+        url(/assets/images/pexels-asphotograpy-518244.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -1049,7 +1051,7 @@
       padding: 20px;
       border-radius: 20px 20px 20px 100px;
       background: linear-gradient(160deg, #00111db0 40%, #3c3c3b70 90%),
-        url(assets/images/pexels-olly-3760089.jpg);
+        url(/assets/images/pexels-olly-3760089.jpg);
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -1095,6 +1097,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: start;
+      padding: 0;
     }
     .areas-img img {
       width: 240px;
@@ -1185,13 +1188,13 @@
     }
     .card1 {
       background: linear-gradient(0deg, #00111d 60%, #51b4bd86 90%),
-        url(assets/images/pexels-darshan394-1044329.jpg);
+        url(/assets/images/pexels-darshan394-1044329.jpg);
       background-position: center;
       background-size: cover;
     }
     .card2 {
       background: linear-gradient(0deg, #00111d 60%, #51b4bd86 90%),
-        url(assets/images/pexels-googledeepmind-18069696.jpg);
+        url(/assets/images/pexels-googledeepmind-18069696.jpg);
       background-position: center;
       background-size: cover;
       margin: 0;
@@ -1200,7 +1203,7 @@
     }
     .card3 {
       background: linear-gradient(0deg, #00111d 60%, #51b4bda2 90%),
-        url(assets/images/pexels-thisisengineering-3861976.jpg);
+        url(/assets/images/pexels-thisisengineering-3861976.jpg);
       background-position: center bottom;
       background-size: fill;
     }

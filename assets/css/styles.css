@@ -50,8 +50,11 @@ strong {
 .header-nav li {
   list-style: none;
   padding-left: 30px;
+  font-size: 18px;
 }
-
+.header-nav li:hover{
+  color: #f7921e;
+}
 /* Estilos para el logo */
 .navbar-brand img {
   height: 40px; /* Ajusta el tamaño según sea necesario */
@@ -59,6 +62,7 @@ strong {
 }
 .container-fluid {
   padding-left: 0;
+
 }
 .navbar {
   padding-left: 10%;
@@ -90,7 +94,12 @@ strong {
   padding-left: 10%;
   background-color: #062735;
 }
-
+.collapse {
+  position: fixed; /* Cambia el menú a una posición fija */
+  top: 0; /* Ajusta la posición para que esté en la parte superior */
+  width: 100%; /* Se asegura de que el menú colapse se extienda por todo el ancho */
+  z-index: 1050; /* Asegura que el menú esté por encima de otros elementos */
+}
 .principal {
   width: 100%;
   height: 900px;
@@ -114,7 +123,7 @@ strong {
 }
 .principal-title strong {
   text-transform: uppercase;
-  color: #51b4bd;
+  color: #f7921e;
 }
 .principal-subtitle {
   width: 40%;
@@ -176,7 +185,7 @@ strong {
 .objt-square {
   width: 400px;
   height: 400px;
-  background: linear-gradient(165deg, #00111d 10%, #37cedb 90%);
+  background: linear-gradient(115deg, #f7921e 10%, #37cedb 80%);
   position: absolute;
   z-index: -1;
   margin-top: 5%;
@@ -221,7 +230,7 @@ strong {
 }
 .vision-title strong {
   text-transform: uppercase;
-  color: #51b4bd;
+  color: #f7921e;
 }
 .vision-title p {
   font-size: 18px;
@@ -262,7 +271,7 @@ strong {
   object-fit: cover;
   background-image: url(/assets/images/Innovation-amico.png);
   background-size: 500px;
-  background-position: center center;
+  background-position: center right;
   background-repeat: no-repeat;
 }
 .beneficios-square {
@@ -272,7 +281,7 @@ strong {
   border-radius: 50px;
   transform: rotate(15deg);
   position: absolute;
-  right: 400px;
+  right: 300px;
   z-index: -1;
   box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.61);
 }
@@ -418,7 +427,7 @@ strong {
 }
 .areas-title strong {
   text-transform: uppercase;
-  color: #51b4bd;
+  color: #f7921e;
 }
 
 .areas-content {
@@ -478,14 +487,19 @@ strong {
   z-index: -1;
   transform: rotate(70deg);
   border-radius: 50px;
-  background: linear-gradient(140deg, #00111d 40%, #3c3c3b62 90%);
+  background: linear-gradient(140deg, #0080db 40%, #f7921e 90%);
 }
-
+.content-secondary{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .card-custom h3 {
   height: 30%;
   color: white;
   font-size: 25px;
   position: relative;
+  padding-top: 20px;
 }
 .card-custom p {
   height: 70%;
@@ -494,14 +508,16 @@ strong {
   position: relative;
 }
 .card-custom {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
   background-color: #00111d;
   border-radius: 40px;
   box-shadow: 2px 6px 10px black;
   transition: box-shadow 0.3s ease;
+  text-align: center;
 }
-.row {
-  justify-content: space-between;
-}
+
 .card1 {
   background: linear-gradient(90deg, #00111d 40%, #51b4bd86 90%),
     url(/assets/images/pexels-darshan394-1044329.jpg);
@@ -509,12 +525,12 @@ strong {
   background-size: cover;
 }
 .card2 {
-  margin-left: 40px;
-  margin-right: 40px;
   background: linear-gradient(0deg, #00111d 40%, #51b4bd86 90%),
     url(/assets/images/pexels-googledeepmind-18069696.jpg);
   background-position: center;
   background-size: cover;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 .card3 {
   background: linear-gradient(-90deg, #00111d 40%, #51b4bda2 90%),
@@ -546,7 +562,7 @@ strong {
 }
 .proyectos-title strong {
   text-transform: uppercase;
-  color: #51b4bd;
+  color: #f7921e;
 }
 .proyectos-subtitle {
   width: 100%;
@@ -562,7 +578,7 @@ strong {
 .proyectos-actuales {
   width: 100%;
   height: 700px;
-  background: linear-gradient(175deg, #ffffff 20%, #51b4bd00 20%);
+  background: linear-gradient(182deg, #ffffff 20%, #51b4bd00 20%);
 }
 
 .proyectos-cards {
@@ -575,11 +591,11 @@ strong {
   grid-gap: 40px;
   padding-left: 10%;
   padding-right: 10%;
-  background: linear-gradient(-5deg, #ffffff 20%, #51b4bd00 20%);
+  background: linear-gradient(-2deg, #ffffff 20%, #51b4bd00 20%);
 }
 .tarjeta-icon {
   height: 10%;
-  color: white;
+  color: #ffb25a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -649,7 +665,7 @@ strong {
   text-align: end;
 }
 .noticias-title strong {
-  color: #00afbe;
+  color: #f7921e;
 }
 .noticias-title p {
   text-align: end;
@@ -663,153 +679,24 @@ strong {
   width: 300px;
   height: 300px;
   border-radius: 50px;
-  background: linear-gradient(165deg, #00111d 10%, #37cedb 90%);
+  background: linear-gradient(165deg, #f7921e 10%, #37cedb 90%);
   transform: rotate(45deg);
   position: absolute;
   z-index: 1;
 }
-.noticias-slider {
+.noticias-slider{
   width: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
+  height: 800px;
   background-color: white;
-}
-/* Ajuste del contenedor del carrusel */
-.carousel-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative; /* Necesario para posicionar las flechas */
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 150px;
 }
 
-#carousel {
-  display: flex;
-  overflow: hidden;
+.galeriaauto-iframe{
+  position: relative;
   width: 100%;
-  height: 600px;
-  background-color: #00afbe;
-  border-radius: 50px;
-  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.671);
-}
-
-.carousel-content {
-  width: 100%;
-  padding-right: 20px;
-  height: 100%; /* Altura fija para el contenedor de texto */
-  overflow: hidden; /* Esconde el desbordamiento si el texto es demasiado largo */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Asegura que el contenido esté bien distribuido */
-}
-
-.carousel-content h2 {
-  margin: 0;
-  font-size: 35px; /* Ajusta el tamaño del título si es necesario */
-  line-height: 1.2; /* Controla el espaciado entre líneas */
-  color: white;
-}
-
-.carousel-content p {
-  margin: 10px 0;
-  font-size: 15px; /* Ajusta el tamaño del texto */
-  line-height: 1.4;
-  flex-grow: 1; /* Permite que la descripción ocupe el espacio disponible */
-  padding-right: 80px;
-  color: white;
-}
-
-.carousel-content a {
-  align-self: flex-start; /* Asegura que el botón "Conocer más" esté alineado al inicio */
-  margin-top: 10px;
-  text-decoration: none;
-  background-color: #bddb6b;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: 50px;
-  height: 50px;
-  margin-top: -25px; /* Para centrar verticalmente */
-  background-color: rgb(0, 0, 0), 0.5;
-  color: #bddb6b;
-  border: none;
-  border-radius: 50%;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-}
-
-.prev {
-  left: 20px; /* A la izquierda */
-}
-
-.next {
-  right: 20px; /* A la derecha */
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-/* Asegurarnos de que los dots estén en la parte inferior */
-.carousel-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; /* Espacio entre el carrusel y los puntos */
-}
-
-/* Ajustar los puntos para hacerlos más visibles si es necesario */
-.carousel-dots .dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.carousel-dots .dot.active {
-  background-color: #bddb6b;
-}
-.carousel-item {
-  display: flex;
-  flex-direction: row;
-  min-width: 100%;
-  padding: 80px;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.carousel-item img {
-  width: 500px; /* Ancho fijo */
-  height: 500px; /* Alto fijo */
-  object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
-  border-radius: 200px 50px 150px 50px;
-}
-
-.carousel-content {
-  width: 100%; /* Ajusta el tamaño del contenido de texto */
-  padding-right: 20px;
-}
-
-.carousel-image {
-  width: 40%; /* Ajusta el tamaño del contenedor de la imagen */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(240, 240, 240);
-  border-radius: 50px;
+  height: 700px;
 }
 
 footer {

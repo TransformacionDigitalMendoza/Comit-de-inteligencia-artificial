@@ -95,7 +95,7 @@
   text-decoration: underline; /* O el estilo que prefieras al pasar el mouse */
 }
 .more-info-btn {
-  background-color: #f7921e;
+  background-color: #bddb6b;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -162,7 +162,7 @@
   .slide-caption p {
     color: #9fcd61;
     margin: 5px 0 0;
-    font-size: 10px;
+    font-size: 13px;
     text-align: start;
     padding-right: 10%;
   }
@@ -184,7 +184,7 @@
     text-decoration: underline; /* O el estilo que prefieras al pasar el mouse */
   }
   .more-info-btn {
-    background-color: #f7921e;
+    background-color: #bddb6b;
     color: #fff;
     border: none;
     padding: 10px 20px;

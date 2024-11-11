@@ -162,6 +162,8 @@ strong {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 
 .carousel-item p{
@@ -174,6 +176,8 @@ strong {
   text-transform: uppercase;
   color: #bddb6b;
 }
+
+
 .objetivos {
   width: 100%;
   height: 900px;

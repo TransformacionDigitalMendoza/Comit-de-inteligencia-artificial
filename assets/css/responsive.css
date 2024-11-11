@@ -3,40 +3,76 @@
   .principal {
     width: 100%;
     height: 700px;
-    background: linear-gradient(
-        135deg,
-        #ffffff 60%,
-        #51b4bd63 50%,
-        #007bff5e 90%
-      ),
-      /* Degradado */ url("/assets/images/pexels-markusspiske-2004161.jpg"); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center left;
-    background-repeat: no-repeat;
-    padding-left: 10%;
-    padding-right: 10%;
+    display: flex;
+    background-color: white;
   }
   .principal-title {
-    width: 100%;
-    height: 45%;
+    width: 40%;
+    height: 100%;
     display: flex;
-    align-items: end;
-    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 40px;
   }
   .principal-title h1 {
-    font-size: 50px;
+    font-size: 39px;
+    padding-bottom: 20px;
+    color: #062735;
+  }
+  .principal-title p{
+    font-size: 15px;
+    color: #062735;
+  }
+  .button-principal{
+    width: 300px;
+    height: 50px;
+    background-color: #062735;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 50px 20px 50px;
+    margin-top: 20px;
+  }
+  .button-principal a{
+    color: white;
+    font-weight: 700;
+  }
+  .button-principal a:hover{
+    color: white;
   }
   .principal-title strong {
     text-transform: uppercase;
     color: #bddb6b;
   }
   .principal-subtitle {
-    width: 55%;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    background-color: #00111d;
+    background: linear-gradient(90deg, #00111da9 25%, #06273560 90%), url(/assets/images/dall-e3.webp);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
   }
+  .carousel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-item p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  .carousel-item strong{
+    text-transform: uppercase;
+    color: #bddb6b;
+  }
+
   .objetivos {
     width: 100%;
     height: 850px;
@@ -260,7 +296,7 @@
     grid-area: square5;
     padding: 20px;
     border-radius: 50px 50px 200px 50px;
-    background: linear-gradient(185deg, #00111d 40%, #bddb6b98 90%);
+    background: linear-gradient(185deg, #00111d 40%, #51b4bda2 90%);
   }
 
   .square7 {
@@ -278,7 +314,7 @@
     padding: 20px;
     display: flex;
     align-items: center;
-    background: linear-gradient(160deg, #00111d 40%, #bddb6ba9 90%);
+    background: linear-gradient(160deg, #00111d 40%, #51b4bda2 90%);
   }
 
   .square11 {
@@ -290,7 +326,7 @@
     grid-area: square15;
     padding: 20px;
     box-shadow: 2px 2px 14px #00111d;
-    background: linear-gradient(15deg, #00111d 40%, #bddb6b9f 90%);
+    background: linear-gradient(15deg, #00111d 40%, #51b4bda2 90%);
   }
   .square18 {
     grid-area: square18;
@@ -807,6 +843,84 @@
   .hidden {
     display: none;
   }
+  .newsletter{
+    width: 100%;
+    height: 300px;
+    background-color: #bddb6b;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "title sub1 sub2 img";
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .newsletter-title{
+    grid-area: title;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .newsletter-title h2{
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+  }
+  .newsletter-sub1{
+    grid-area: sub1;
+    padding: 40px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .newsletter-sub1 p{
+    font-size: 13px;
+    color: white;
+    text-align: start;
+    font-weight: 800;
+  }
+  .newsletter-sub2{
+    grid-area: sub2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .buttom-news a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+  }
+  .buttom-news{
+    width: 100%;
+    height: 60px;
+    background-color: #00111d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  .buttom-news:hover{
+    background-color: #0080db;
+  }
+  .newsletter-img{
+    grid-area: img;
+    background-image: url(/assets/images/Online\ world-bro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
 }
 
 @media (max-width: 768px) {
@@ -826,20 +940,42 @@
     background-size: cover;
     background-position: center left;
     background-repeat: no-repeat;
-    padding-left: 10%;
-    padding-right: 10%;
   }
   .principal-title {
     width: 100%;
-    height: 50%;
+    height: 100%;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    align-items: start;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    padding-left: 10%;
+    padding-right: 40px;
   }
   .principal-title h1 {
-    font-size: 45px;
+    font-size: 40px;
     text-align: start;
     font-weight: 500;
+    color: white;
+  }
+  .principal-title p{
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .button-principal{
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 50px 20px 50px;
+  }
+  .button-principal a{
+    color: #062735;
+    font-weight: 700;
+  }
+  .button-principal a:hover{
     color: white;
   }
   .principal-title strong {
@@ -847,23 +983,16 @@
     color: #bddb6b;
   }
   .principal-subtitle {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: end;
-    justify-content: start;
-    flex-direction: column;
-    text-align: start;
-    padding-top: 20px;
+    display: none;
   }
-  .principal-subtitle p {
-    color: white;
-    font-size: 18px;
+
+  .carousel{
+    display: none;
   }
   .objetivos {
     width: 100%;
     height: 1200px;
-    background: linear-gradient(5deg, #ffffff 10%, #062735 10%);
+    background: linear-gradient(5deg, #ffffff 15%, #062735 10%);
     padding-left: 10%;
     padding-right: 10%;
     background-size: fill;
@@ -880,7 +1009,7 @@
     text-align: start;
   }
   .objetivos-title h2 {
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     padding-bottom: 10%;
   }
@@ -889,7 +1018,7 @@
   }
   .objetivos-title li {
     list-style: none;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     color: #bddb6b;
   }
@@ -906,21 +1035,11 @@
     align-items: center;
   }
   .objetivos-img img {
-    width: 500px;
+    width: 350px;
     height: auto;
     z-index: 2;
   }
   .objt-square {
-    width: 250px;
-    height: 250px;
-    background: linear-gradient(165deg, #bddb6b 10%, #c8eff8 90%);
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    transform: rotate(95deg);
-    border-radius: 50px;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.671);
     display: none;
   }
   .vision {
@@ -947,7 +1066,7 @@
     padding: 0;
   }
   .vision-img img {
-    width: 500px;
+    width: 350px;
   }
   .vision-title {
     width: 100%;
@@ -966,7 +1085,7 @@
     color: #bddb6b;
   }
   .vision-title p {
-    font-size: 13px;
+    font-size: 12px;
   }
   .beneficios {
     width: 100%;
@@ -1141,7 +1260,7 @@
   }
   .areas {
     width: 100%;
-    height: 700px;
+    height: 800px;
     background: linear-gradient(0deg, #ffffff 70%, #ffffff 90%);
     /* Degradado */
     background-size: cover;
@@ -1162,7 +1281,7 @@
     text-align: center;
   }
   .areas-title h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .areas-title p {
     font-size: 13px;
@@ -1250,6 +1369,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .card-custom h3 {
     height: 30%;
@@ -1305,8 +1426,7 @@
     justify-content: center;
     padding: 0;
     padding-bottom: 60px;
-    padding-left: 10%;
-    padding-right: 10%;
+
   }
   .proyectos-title {
     width: 100%;
@@ -1318,7 +1438,7 @@
     text-align: center;
   }
   .proyectos-title h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   .proyectos-title strong {
     text-transform: uppercase;
@@ -1331,8 +1451,8 @@
     justify-content: center;
     text-align: center;
     padding: 0;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .proyectos-actuales {
     width: 100%;
@@ -1345,7 +1465,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 400px 400px 400px;
+    grid-template-rows: 500px 400px 400px 400px;
     grid-template-areas:
       "tarjeta1"
       "tarjeta2"
@@ -1460,7 +1580,7 @@
   }
   .noticias-slider {
     width: 100%;
-    height: 600px;
+    height: 700px;
     padding-top: 0;
   }
   .noticias-container {
@@ -1470,7 +1590,7 @@
     display: block;
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 700px;
   }
   .galeriaauto-iframe {
     background-color: #ff070700;
@@ -1479,6 +1599,91 @@
     width: 100%;
     height: 500px;
   }
+
+  .newsletter{
+    width: 100%;
+    height: 900px;
+    background-color: #bddb6b;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 300px 100px auto;
+    grid-template-areas: 
+    "title"
+    "sub1"
+    "sub2"
+    "img";
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .newsletter-title{
+    grid-area: title;
+    padding: 0;
+  }
+  .newsletter-title h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+  }
+  .newsletter-sub1{
+    grid-area: sub1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .newsletter-sub1 p{
+    font-size: 13px;
+    color: white;
+    text-align: start;
+    font-weight: 700;
+    padding: 20px;
+  }
+  .newsletter-sub2{
+    grid-area: sub2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttom-news a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+  }
+  .buttom-news{
+    width: 100%;
+    height: 60px;
+    background-color: #00111d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  .buttom-news:hover{
+    background-color: #0080db;
+  }
+  .newsletter-img{
+    grid-area: img;
+    background-image: url(/assets/images/Online\ world-bro.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+
+
+
+
+
+
+
+
   footer {
     width: 100%;
     height: 450px;
@@ -1575,14 +1780,14 @@
     justify-content: center;
   }
   .contact-title h2{
-    font-size: 45px;
+    font-size: 40px;
     color: white;
   }
   .contact-title strong{
     text-transform: uppercase;
   }
   .contact-title p{
-    font-size: 35px;
+    font-size: 30px;
     color: white;
   }
   .contact-content{
@@ -1599,7 +1804,7 @@
     padding-right: 40px;
   }
   .contact-info p{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     color: white;
     text-align: start;
